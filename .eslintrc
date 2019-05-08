@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["import", "module-resolver"],
+  "rules": {
+    "import/no-dynamic-require": 0,
+    "import/prefer-default-export": 0,
+    "global-require": 0,
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-unused-vars": [
+      2,
+      {
+        "args": "none"
+      }
+    ],
+    "no-use-before-define": 0,
+    "no-useless-concat": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "react/destructuring-assignment": 0,
+    "react/display-name": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/prefer-stateless-function": 0
+  }
+}
